@@ -1,0 +1,73 @@
+/* Apply styles to the body */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Style the heading */
+h2 {
+    color: #333;
+    font-size: 24px;
+}
+
+/* Style the paragraph */
+p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.5; /* Improves readability */
+    max-width: 600px; /* Keeps text readable on large screens */
+    margin: 10px auto; /* Centers paragraph */
+}
+
+/* Style the button */
+button {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #005f73;
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adds depth */
+}
+
+.button-space {
+    margin-right: 20px; /* Adjust the spacing as needed */
+}
+nav {
+    background-color: #008CBA;
+    padding: 10px;
+    display: flex; /* Enables Flexbox */
+    justify-content: flex-start; /* Aligns content to the left */
+}
+nav button {
+    background-color: white;
+    color: #008CBA;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px; /* Adds some space from the left edge */
+}
+nav button:hover {
+    background-color: #005f73;
+    color: white;
+}
+div {
+    border: 1px solid blue;
+    background-color: beige;
+    padding: 20px; 
+    margin: 50px;
+    border-radius: 10px;
+}
