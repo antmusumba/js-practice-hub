@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript and External CSS</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+   
+</head>   
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <button onclick="resetPage()">Restore Initial State</button>
+    </nav>
+
+    <h2>My First Heading</h2>
+    <p id="dope">I am going to change this when you click a button.</p>
+    
+    <!-- Button to change text -->
+    <button onclick='document.getElementById("dope").innerHTML = "You see, I can use JavaScript to change the behavior of HTML!"'>
+        Click Me, bro!
+    </button>
+
+    
+
+    <!-- Lightbulb Section -->
+    <div class="lightbulb-container">
+        <p>Change value of an attribute:</p>
+        <button onclick="document.getElementById('myImage').src='assets/pic_bulbon.gif'">Turn on the light</button>
+        <button onclick="document.getElementById('myImage').src='assets/pic_bulboff.gif'">Turn off the light</button>
+        <br><br>
+        <img id="myImage" src="assets/pic_bulboff.gif" style="width:100px">
+    </div>
+
+    <p>Changing the style of an HTML element</p>
+    <button onclick="document.getElementById('dope').style.color = 'red'">Change color</button>
+
+    <script>
+        function resetPage() {
+            // Reset text content
+            document.getElementById("dope").innerHTML = "I am going to change this when you click a button.";
+            
+            // Reset image source
+            document.getElementById("myImage").src = "assets/pic_bulboff.gif";
+
+            // Reset text color
+            document.getElementById("dope").style.color = "";
+            document.getElementById("dope").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
