@@ -71,3 +71,6 @@ div {
     margin: 50px;
     border-radius: 10px;
 }
+.lightbulb-container button {
+    margin-right: 10px;
+}
