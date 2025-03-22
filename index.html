@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript and External CSS</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
-   
 </head>   
 <body>
 
@@ -22,8 +21,6 @@
         Click Me, bro!
     </button>
 
-    
-
     <!-- Lightbulb Section -->
     <div class="lightbulb-container">
         <p>Change value of an attribute:</p>
@@ -35,17 +32,31 @@
 
     <p>Changing the style of an HTML element</p>
     <button onclick="document.getElementById('dope').style.color = 'red'">Change color</button>
-<div>
-    <h2>innerText vs innerHTML Demo</h2>
 
-    <label for="userInput">Enter some text:</label>
-    <input type="text" id="userInput" placeholder="Try entering <b>bold</b> text">
-    <button onclick="useInnerText()">Use innerText</button>
-    <button onclick="useInnerHTML()">Use innerHTML</button>
+    <div>
+        <h2>innerText vs innerHTML Demo</h2>
 
-    <h3>Output:</h3>
-    <p id="output"></p>
-</div>
-  <script src="scripts.js"></script>
+        <label for="userInput">Enter some text:</label>
+        <input type="text" id="userInput" placeholder="Try entering <b>bold</b> text">
+        <button onclick="useInnerText()">Use innerText</button>
+        <button onclick="useInnerHTML()">Use innerHTML</button>
+
+        <h3>Output:</h3>
+        <p id="output"></p>
+    </div>
+
+    <!-- New Section for Fetching Random User Data -->
+   
+    <h1>Random User Generator</h1>
+    <button onclick="fetchRandomUser()">Get Random User</button>
+    <p id="user-info">Click the button to fetch a random user.</p>
+
+    <div class="card" id="user-card">
+        <img id="user-pic" class="user-img" alt="User Picture">
+        <p><strong>Name:</strong> <span id="user-name"></span></p>
+        <p><strong>Email:</strong> <span id="user-email"></span></p>
+    </div>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
